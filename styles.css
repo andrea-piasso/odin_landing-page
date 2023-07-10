@@ -22,6 +22,8 @@ body {
     justify-content: space-between;
     font-size: 24px;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .Header-logo {
@@ -36,11 +38,17 @@ body {
 .Header-links {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .Hero-Text {
     font-size: 48px;
     font-weight: 800;
+}
+
+.Hero-image {
+    border: 0;
+    margin: 0;
 }
 
 .Hero-button {
@@ -63,10 +71,15 @@ a {
     display: flex;
     padding: 24px 0px;
     align-self: center;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
 }
 
 .Hero-left {
-    flex-basis: 600px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    max-width: 600px;
 }
 
 .content {
@@ -80,6 +93,7 @@ a {
     font-size: 36px;
     font-weight: 800;
     color: #1f2937;
+    text-align: center;
 }
 
 .content-images {
@@ -104,8 +118,13 @@ a {
     padding: 24px 48px;
 }
 
+.quote-text {
+    font-weight: 300;
+}
+
 .quote-subtext {
     text-align: end;
+    font-weight: 700;
 }
 
 .extras {
