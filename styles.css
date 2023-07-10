@@ -5,6 +5,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    gap: 16px;
 }
 
 .Header {
@@ -12,7 +13,7 @@ body {
     flex-direction: column;
     background-color: #1f2937;
     color: #f9faf8;
-    padding: 16px 48px;
+    padding: 16px 96px;
 
 }
 
@@ -32,6 +33,11 @@ body {
     color: #e5e7eb;
 }
 
+.Header-links {
+    display: flex;
+    gap: 24px;
+}
+
 .Hero-Text {
     font-size: 48px;
     font-weight: 800;
@@ -44,6 +50,8 @@ body {
     border-radius: 8px;
     font-size: 14px;
     font-weight: bold;
+    border: 8px;
+    margin: 8px 0;
 }
 
 a {
@@ -53,6 +61,12 @@ a {
 
 .Hero {
     display: flex;
+    padding: 24px 0px;
+    align-self: center;
+}
+
+.Hero-left {
+    flex-basis: 600px;
 }
 
 .content {
@@ -60,14 +74,73 @@ a {
     flex-direction: column;
 }
 
+.content-header {
+    align-self: center;
+    margin-bottom: 8px;
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+}
+
 .content-images {
     display: flex;
+    justify-content: center;
+    gap: 36px;
+    flex-wrap: wrap;
+}
+
+.content-subtext {
+    max-width: 150px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    font-size: 30px;
+    font-style: italic;
+    padding: 24px 48px;
+}
+
+.quote-subtext {
+    text-align: end;
 }
 
 .extras {
+    align-self: center;
+    background-color: #3882f6;
     display: flex;
+    padding: 24px;
+    color: #f9faf8;
+    border-radius: 8px;
+}
+
+.extras-text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.extras-subtext {
+    font-size: 16px;
+}
+
+.extras-button {
+    margin: 8px 16px;
+    background-color: #3882f6;
+    border-color: #f9faf8;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border-width: 4px;
+    color: #f9faf8;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .footer {
-    background-color: yellow;
+    background-color: #1f2937;
+    padding: 16px;
+    text-align: center;
+    color: #f9faf8;
 }
